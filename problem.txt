@@ -1,0 +1,42 @@
+Problem Statement:
+
+We have to develop a Photo Gallery Application that should have the following features 
+embedded in it:-
+
+1. The application should asynchronously retrieve the images from a server.
+2. The application should display the images in a gallery layout using HTML and CSS.
+3. The application should allow the user to interact with the gallery, such as clicking on
+an image to view it in a larger size and buttons to go to the next or previous image.
+
+4. Any additional features are highly appreciated.
+
+How to use the application?
+
+1. Install Node.js from Node.org
+
+2. Fork, Clone and open this repository in a terminal/command prompt.
+
+3. run npm Install.
+
+4. run npm start 
+
+5. Open your preferred web browser and go to https://localhost:8000/home
+
+
+Features and Functionalities of the application
+
+1. You can view an image by clicking on its thumbnail, when you take the cursor to the image ,
+  the image will show some opacity .
+
+2. Once you have opened an image, you can view its enlarged form .
+
+3. To close the image just click on the window again.
+
+4. When an image is opened , you can go to the next image by clicking on the next button 
+  or go to the previous image by clicking on the prev button.
+
+5. There is a navigation bar that will take you to the relevant sections in the page.
+
+6. The application is responsive .
+
+

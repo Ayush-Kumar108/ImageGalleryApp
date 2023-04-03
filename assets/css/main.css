@@ -1,0 +1,51 @@
+/* wrappers */
+
+#header-main nav{
+    background-color:darkcyan;
+}
+
+body{
+    background-color: antiquewhite;
+    
+}
+
+
+/* Default text styling */
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 20px;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 32px;
+}
+
+#header-main nav img{
+    height: 100px;
+    margin: 25px 0;
+    border-radius: 50px;
+}
+
+#header-main nav li{
+    
+    display: inline-block;/* Let's get the horizontal navbar */
+    /*By default , the unordered lists are bulleted and have their display as block.So, we
+    will have to set the display to "inline-block" to get them horizontally one after 
+    another
+    */
+    list-style: none;/* remove bullets from list items   */
+    
+    margin: 40px 0 40px 30px;
+}
+
+#header-main nav li a {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+

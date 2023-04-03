@@ -1,0 +1,344 @@
+/* Gallery container */
+
+#index-gallery{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr; /*This distributes spacings between columns..*/
+    /*I want four different columns in the gallery 
+    that are evenly-spaced individually so whatever width is available to them it should
+    be divided evenly.... */
+    grid-template-rows : auto;/*This distributes spacings between rows..*/
+    gap: 10px;
+    grid-template-areas:
+    "gallery-p gallery-p gallery-p gallery-p"
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img2 img3 img4 "
+    "img5 img6 img7 img8 "
+    "img9 img10 img11 img12"
+    "img13 img14 img15 img16";
+
+}
+
+#blog{
+ 
+    width: 50%;
+    margin: 10px 0px;
+    background-color:cornflowerblue;
+    color: white;
+    overflow-wrap: break-word;/*  We don't want the words to cross their box size*/
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+
+#about{
+
+    width: 41%;
+    margin: 5px 5px;
+    background-color:coral;
+    color: white;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+   
+}
+
+#left-side-bar{
+
+    width: 20%;
+    background-color:blueviolet;
+    color: white;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    padding: 10px;
+    margin: 5px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+#right-side-bar{
+
+   width: 22%;
+   background-color:brown;
+   overflow-wrap: break-word;
+   color: white;
+   font-size: 20px;
+   padding: 10px;
+   margin: 5px 5px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+
+.arrange{
+
+    display: flex;
+    margin: 0px 0px;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+
+}
+
+h2{
+    color: black;
+}
+
+/*Default styling of images  */
+#index-gallery .gallery-img{
+    
+     width: 100%;
+     height: 300px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     cursor: pointer;
+
+}
+
+#index-gallery p{
+
+    grid-area: gallery-p;
+
+}
+
+#index-gallery h2{
+
+    grid-area: gallery-h2 ;
+    
+}
+
+/* Styling each image individually */
+
+#index-gallery .img1{
+ 
+    grid-area : img1;
+    background-image: url("../img/thumbs/img1.jpg");
+
+}
+
+
+#index-gallery .img2{
+ 
+    grid-area : img2;
+    background-image: url("../img/thumbs/img2.jpg");
+
+}
+
+
+#index-gallery .img3{
+ 
+    grid-area : img3;
+    background-image: url("../img/thumbs/img3.jpg");
+
+}
+
+
+#index-gallery .img4{
+ 
+    grid-area : img4;
+    background-image: url("../img/thumbs/img4.jpg");
+
+}
+
+
+#index-gallery .img5{
+ 
+    grid-area : img5;
+    background-image: url("../img/thumbs/img5.jpg");
+
+}
+
+
+#index-gallery .img6{
+ 
+    grid-area : img6;
+    background-image: url("../img/thumbs/img6.jpg");
+
+}
+
+
+#index-gallery .img7{
+ 
+    grid-area : img7;
+    background-image: url("../img/thumbs/img7.jpg");
+
+}
+
+
+#index-gallery .img8{
+ 
+    grid-area : img8;
+    background-image: url("../img/thumbs/img8.jpg");
+
+}
+
+
+
+#index-gallery .img9{
+ 
+    grid-area : img9;
+    background-image: url("../img/thumbs/img9.jpg");
+
+}
+
+
+#index-gallery .img10{
+ 
+    grid-area : img10;
+    background-image: url("../img/thumbs/img10.jpg");
+
+}
+
+#index-gallery .img11{
+ 
+    grid-area : img11;
+    background-image: url("../img/thumbs/img11.jpg");
+
+}
+
+
+#index-gallery .img12{
+ 
+    grid-area : img12;
+    background-image: url("../img/thumbs/img12.jpg");
+
+}
+
+
+#index-gallery .img13{
+ 
+    grid-area : img13;
+    background-image: url("../img/thumbs/img13.jpg");
+
+}
+
+
+#index-gallery .img14{
+ 
+    grid-area : img14;
+    background-image: url("../img/thumbs/img14.jpg");
+
+}
+
+
+#index-gallery .img15{
+ 
+    grid-area : img15;
+    background-image: url("../img/thumbs/img15.jpg");
+
+}
+
+#index-gallery .img16{
+ 
+    grid-area : img16;
+    background-image: url("../img/thumbs/img16.jpg");
+
+}
+
+
+/*Setting the background of our thumbnail...  */
+.gallery-img div{
+
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Let's now style the anchor tags  */
+.gallery-img a{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ffff;
+    text-decoration: none;/*we don't like the under-lines !!!!*/
+    text-transform: uppercase;
+  
+}
+
+/* Let's create the hover effect..*/
+
+.gallery-img div:hover{
+
+   opacity: 0.8;/*I don't want the background completely black  */
+   transition: all ease-in-out 100ms;
+
+}
+
+
+.gallery-img div img:hover{
+
+    transform: scale(0.8) rotate(-15deg);
+ 
+ }
+
+/*Designing the pop-up window when clicked..*/
+.img-window{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);/*We want some transparency... */
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.img-window img{
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+/*Styling the buttons */
+
+.img-btn-next{
+
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.img-btn-next:hover{
+   opacity: 0.8;
+}
+
+.img-btn-prev{
+
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.img-btn-prev:hover{
+   opacity: 0.8;
+}
+
+
